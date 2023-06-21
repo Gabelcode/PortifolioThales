@@ -4,26 +4,29 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
     font-size: 16px;
     text-decoration: none;
+    color: white;
 }
 
 body {
-    background-image: url(/src/img/background.png);
+    background-image: url(./img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
 }
 .header {
-    background-color: white;
+    background-color: #004BAD;
     display: flex;
     justify-content: space-between;
+    width: 100%;
     height: 10vh;
     align-items: center;
 }
 .logo {
-    height: 10vh;
+    height: 18vh;
     margin: 2rem;
 }
 .links {
@@ -31,42 +34,46 @@ body {
 }
 .links-itens {
     display: flex;
-    font-weight: 500;
-    gap: 5rem;
+    font-weight: 400;
+    gap: 2rem;
 }
 .links-itens a {
-    color: black;
-    font-size: 1.7rem;
-    transition: 1s;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
 }
 .links-itens a:hover {
-    color:blue ;
+    color:white ;
+    background-color: #5EE0E9;
 }
 .inicio {
-    border: 1px solid black;
+    width: 95%;
+    height: 100%;
     display: flex;
-    margin: 7rem ;
+    justify-content: space-around;
+    margin: 8rem 2rem 15rem ;
 }
 .foto-inicio{
-    margin-inline-start: 2rem;
     align-self: center;
-    height: 20rem;
+    height: 30rem;
 }
 .title-inicio{
     margin-top: 4rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 .title-inicio h1 {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     text-align: center;
-    width: 80%;
+    width: 90%;
 }
 .title-inicio p {
     font-size: 1.7rem;
-    width: 70%;
+    width: 90%;
     text-align: center;
 }
 .btn{
@@ -74,59 +81,62 @@ body {
     text-align: center;
     width: 12rem;
     height: 3.5rem;
-    border: 0.1rem solid white;
+    border: 0.1rem  transparent;
     border-radius: 1rem;
-    background-color: #5EE0E9;
+    background-color: #004BAD;
+    text-shadow: 0 0 10px #5EE0E9, 0 0 20px #5EE0E9, 0 0 30px #5EE0E9, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
     transition: 0.6s;
 }
 .btn:hover{
     width: 13rem;
-    border: 0.1rem solid #5EE0E9;
     border-radius: 1rem;
-    background-color: #225DD6;
+    color: white;
+    background-color: #5EE0E9;
 }
 .dados {
     display: flex;
-    height: 4rem;
-    border: 1px solid black;
+    height: 100%;
     margin: 1rem;
-    gap: 2rem;
+    gap: 4rem;
 }
 .dados h3{
-    margin: 1rem;
-    font-size: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 300;
     text-align: center;
 }
 .sobre{
-    border: 1px solid black;
+    margin: 4rem 2rem 10rem ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 3rem;
     height: 100%;
 }
 .card-sobre{
-    margin: 4rem;
+    margin: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4rem;
 }
 .title-sobre{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin: 6rem;
+    margin: 2em;
 }
 .title-sobre h1{
-    font-size: 5rem;
+    color: white;
+    font-size: 2.7rem;
     text-align: center;
 }
 .title-sobre h3{
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
 }
 .video-background{
@@ -134,18 +144,97 @@ body {
     height: 50rem;
     margin-left: 0;
     z-index: -1;
-  }
+}
+.title-transform{
+    margin: 3rem;
+}
+.title-transform h1{
+    font-size: 3.7rem;
+    text-align: center;
+    color: white;
+}
 .transformacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+.card-tabela {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem; 
+  justify-content: center;
+}
+.img-cards {
+  min-width: 400px;
+  margin-bottom: 4rem; /* Adicione esta propriedade para definir o espaçamento vertical entre as fotos */
+}
+.card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 20px rgba(0, 75, 173, 0.9);
+  border-radius: 1rem;
+}
+.planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.card-planos{
+    display: flex;
+    justify-content: space-around;
     height: 100%;
+    text-align: center;
+    border: 0.5rem solid white;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 2rem;
+}
+.info{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
+    justify-content: space-evenly;
 }
-.title-transform h1{
-    font-size: 4rem;
-    display: flex;
+.info h1{
+    margin: 0.5rem;
+    font-size: 2.9rem;
+    font-weight: 700;
+    color: #004BAD;
+}
+.info p{
+    color: Black;
+}
+
+.info h2{
+    color: #004BAD;
+    font-weight: 400;
+    margin-top: -1.5rem;
+}
+.btn-planos{
+    gap: 2rem;
     text-align: center;
-    margin: 4rem;
+    align-items: center;
+    height: 3.5rem;
+    border: 0.1rem  transparent;
+    border-radius: 1rem;
+    background-color: #004BAD;
+    transition: 0.6s;
+}
+.btn-planos:hover{
+    border-radius: 1rem;
+    color: #004BAD;
+    background-color: #5EE0E9;
+
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #004BAD;
+    text-align: center;
 }
