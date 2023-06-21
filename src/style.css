@@ -52,7 +52,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 8rem 2rem 15rem ;
+    margin: 8rem 2rem 5rem ;
 }
 .foto-inicio{
     align-self: center;
@@ -166,7 +166,7 @@ body {
   justify-content: center;
 }
 .img-cards {
-  min-width: 400px;
+  width: 400px;
   margin-bottom: 4rem; /* Adicione esta propriedade para definir o espaçamento vertical entre as fotos */
 }
 .card {
@@ -238,3 +238,158 @@ body {
     background-color: #004BAD;
     text-align: center;
 }
+/*Responsividade*/
+@media(max-width:803px){
+    .header a{
+        font-size: 1rem;
+    }
+    .btn{
+      width: 9rem;
+      height: 2.5rem;  
+    }
+    .title-inicio{
+        width: 100%;
+    } 
+    .title-inicio h1{
+        font-size: 1.8rem;
+    }
+     .title-inicio p{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .foto-inicio{
+        height: 25rem;
+    }
+    .video-background{
+        height: 35rem;
+    }
+    .title-sobre{
+        margin: 0;
+    }
+    .title-sobre h1{
+        font-size: 2.1rem;
+    }
+    .transformacao{
+        display: flex;
+        align-items: center;
+    }
+    .transformacao img{
+        width: 300px;
+    }
+    .transformacao h1{
+        font-size: 2.8rem;
+    }
+    .card-tabela{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .img-cards{
+        width: 300px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .card-planos{
+        margin: 1rem;
+    }
+    .card-planos h1{
+        font-size: 2.3rem;
+    }
+    .card-planos p{
+        font-size: 1rem;
+    }
+    .card-planos h2{
+        margin: 0.2rem;
+    }
+}
+@media(max-width:450px){
+    .header{
+        margin-bottom: 4rem;
+    }
+    .logo{
+        margin: 0;
+    }
+    .header a{
+        font-size: 0.6rem;
+    }
+    .btn{
+      width: 9rem;
+      height: 2.5rem;  
+    }
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    .title-inicio{
+        width: 70%;
+        gap: 1rem;
+        margin-top: 2rem;
+    } 
+    .title-inicio h1{
+        font-size: 1.5rem;
+    }
+     .title-inicio p{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .dados h3{
+        font-size: 1.2rem;
+        width: 85%;
+    }
+    .foto-inicio{
+        height: 25rem;
+    }
+    .video-background{
+        height: 30rem;
+    }
+    .card-sobre{
+        margin: 0;
+        gap: 2rem;
+    }
+    .title-sobre h1{
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .title-sobre h3{
+        font-size: 1.2rem;
+    }
+    .transformacao{
+        display: flex;
+        align-items: center;
+    }
+    .transformacao img{
+        width: 300px;
+    }
+    .transformacao h1{
+        font-size: 2.8rem;
+    }
+    .card-tabela{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .img-cards{
+        width: 300px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+    .card-planos{
+        margin: 1rem;
+    }
+    .card-planos h1{
+        font-size: 2.3rem;
+    }
+    .card-planos p{
+        font-size: 1rem;
+    }
+    .card-planos h2{
+        margin: 0.2rem;
+    }
+}
+
